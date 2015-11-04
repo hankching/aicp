@@ -229,6 +229,10 @@ PRODUCT_PACKAGES += \
     make_ext4fs \
     resize2fs \
     setup_fs
+    
+# Compatibility # WVMExtractor: Failed to open libwvm.so: dlopen failed: cannot locate symbol "UCNV_TO_U_CALLBACK_STOP_53" referenced by "/system/lib/libdrmmtkutil.so" #
+PRODUCT_PACKAGES += \
+    libshim_icu53
 
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=8
 
