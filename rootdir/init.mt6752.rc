@@ -5,7 +5,6 @@ import init.ssd.rc
 
 on init
     export LD_PRELOAD "libxlog.so"
-    export LD_SHIM_LIBS /system/lib/libicuuc.so|libshim_icu53.so
 
     # BATTERY proc
     chown shell system /proc/mtk_battery_cmd/current_cmd
